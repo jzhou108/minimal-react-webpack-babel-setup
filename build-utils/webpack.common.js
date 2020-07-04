@@ -1,10 +1,10 @@
 const webpack = require('webpack');
+const path = require('path');
 const HtmlWebpackPlugin = require ('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -18,7 +18,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + '/dist',
+    path: path.resolve(__dirname, '../', 'dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
