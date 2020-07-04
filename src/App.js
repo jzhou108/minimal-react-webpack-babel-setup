@@ -1,6 +1,6 @@
 import React from 'react';
 
-const App = ({ title }) =>
-  <div>{title}</div>;
+const App = ({ appTitle }) =>
+  <div>{appTitle}</div>;
 
 export default App;

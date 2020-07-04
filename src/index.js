@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 
-const myTitle = 'My React with Webpack/Babel';
+const myAppTitle = 'React with Webpack/Babel in ' + process.env.NODE_ENV + ' mode';
 
 ReactDOM.render(
-  <App title={myTitle} />,
+  <App appTitle={myAppTitle} />,
   document.getElementById('app')
 );
 
