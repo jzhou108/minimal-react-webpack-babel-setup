@@ -26,7 +26,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Hello Webpack bundled Javascipt Project',
+      title: 'React with Webpack/Babel',
       template: './src/index.html'
     })
   ],
