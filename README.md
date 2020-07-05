@@ -32,3 +32,7 @@ Read how to set it up yourself: [React with Webpack Tutorial](https://www.robinw
 * npm install
 * npm start
 * visit `http://localhost:8080/`
+
+## Production Deploy
+* npm run build
+* http-server dist
