@@ -1,7 +1,10 @@
 import React from 'react';
+import styles from './style.css';
 
-// eslint-disable-next-line react/jsx-filename-extension
-const App = ({ appTitle }) => <div>{appTitle}</div>;
+const App = ({ appTitle }) => (
+  // eslint-disable-next-line react/jsx-filename-extension
+  <div className={styles.title}>{appTitle}</div>
+);
 App.propTypes = {
   appTitle: String.isRequired,
 };
