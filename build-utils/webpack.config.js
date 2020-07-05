@@ -1,14 +1,16 @@
+/* eslint-disable import/no-dynamic-require */
+/* eslint-disable global-require */
 const webpackMerge = require('webpack-merge');
 const commonConfig = require('./webpack.common.js');
 
-const getAddons = addonsArgs => {
+const getAddons = (addonsArgs) => {
   const addons = Array.isArray(addonsArgs)
     ? addonsArgs
     : [addonsArgs];
- 
+
   return addons
     .filter(Boolean)
-    .map(name => require(`./addons/webpack.${name}.js`));
+    .map((name) => require(`./addons/webpack.${name}.js`));
 };
 
 module.exports = ({ env, addon }) => {
